@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="480.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.controlAjout">
+   <children>
+      <Pane layoutX="-115.0" layoutY="-169.0" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane layoutX="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#bd6bdf" layoutX="290.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un formateur" textAlignment="CENTER" wrappingWidth="342.04840087890625">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nom" layoutX="211.0" layoutY="132.0" prefHeight="25.0" prefWidth="226.0" promptText="Nom" />
+            <TextField fx:id="prenom" layoutX="509.0" layoutY="132.0" prefHeight="25.0" prefWidth="226.0" promptText="Prénom" />
+            <TextField fx:id="CIN" layoutX="211.0" layoutY="183.0" prefHeight="25.0" prefWidth="226.0" promptText="CIN" />
+            <TextField fx:id="email" layoutX="509.0" layoutY="183.0" prefHeight="25.0" prefWidth="226.0" promptText="Email" />
+            <TextField fx:id="adress" layoutX="211.0" layoutY="233.0" prefHeight="25.0" prefWidth="226.0" promptText="Adresse" />
+            <TextField fx:id="numero_telephone" layoutX="509.0" layoutY="233.0" prefHeight="25.0" prefWidth="226.0" promptText="Téléphone" />
+            <TextField fx:id="diplome" layoutX="211.0" layoutY="331.0" prefHeight="25.0" prefWidth="226.0" promptText="Diplome" />
+            <Button fx:id="btn" layoutX="239.0" layoutY="411.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="88.0" text="Retour" />
+            <Button fx:id="btnconf" layoutX="616.0" layoutY="411.0" mnemonicParsing="false" onAction="#Conf" prefHeight="36.0" prefWidth="88.0" text="Confirmer" />
+            <Label layoutX="509.0" layoutY="287.0" text="Sexe: " />
+            <AnchorPane layoutX="-3.0" prefHeight="480.0" prefWidth="106.0" style="-fx-background-color: D4A1EC;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="105.0" layoutX="15.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../photo/manager.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="label1" layoutX="262.0" layoutY="106.0" prefHeight="26.0" prefWidth="398.0" />
+            <TextField fx:id="expertise" layoutX="516.0" layoutY="333.0" prefHeight="26.0" prefWidth="211.0" promptText="Expertise" />
+            <RadioButton fx:id="sexeh" layoutX="552.0" layoutY="280.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" text="Homme" />
+            <RadioButton fx:id="sexef" layoutX="647.0" layoutY="286.0" mnemonicParsing="false" text="Femme" />
+            <Label fx:id="conf" layoutX="423.0" layoutY="89.0" />
+            <DatePicker fx:id="date_de_naissance" layoutX="211.0" layoutY="283.0" prefHeight="26.0" prefWidth="226.0" promptText="Date de naissance" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

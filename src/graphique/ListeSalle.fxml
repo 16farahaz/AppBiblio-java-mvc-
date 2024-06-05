@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlListeSalle">
+   <children>
+      <Pane layoutX="-9.0" prefHeight="599.0" prefWidth="918.0">
+         <children>
+            <Label layoutX="392.0" layoutY="33.0" prefHeight="54.0" prefWidth="279.0" text="Liste Des Salles">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="172.0" layoutY="152.0" prefHeight="322.0" prefWidth="695.0">
+              <columns>
+                <TableColumn fx:id="colnum" prefWidth="94.4000244140625" text="Numéro" />
+                <TableColumn fx:id="colnom" prefWidth="114.39996337890625" text="Nom" />
+                  <TableColumn fx:id="coltype" prefWidth="111.20001220703125" text="Type" />
+                  <TableColumn fx:id="coletat" prefWidth="180.79998779296875" text="Etat" />
+                  <TableColumn fx:id="colmat" prefWidth="196.0" text="Capacité ( nombre d'élèves )" />
+              </columns>
+            </TableView>
+            <TextField fx:id="chernom" layoutX="172.0" layoutY="112.0" prefHeight="29.0" prefWidth="561.0" />
+            <Button fx:id="chercher" layoutX="748.0" layoutY="112.0" mnemonicParsing="false" onAction="#chercher" prefHeight="25.0" prefWidth="114.0" text="Chercher">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="retour" layoutX="172.0" layoutY="514.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="114.0" text="Retour">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="supp" layoutX="363.0" layoutY="514.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="25.0" prefWidth="114.0" text="Supprimer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="modifier" layoutX="557.0" layoutY="514.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="25.0" prefWidth="114.0" text="Modifier">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="ajouter" layoutX="748.0" layoutY="514.0" mnemonicParsing="false" onAction="#Ajout" prefHeight="25.0" prefWidth="114.0" text="Ajouter">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="alert" layoutX="388.0" layoutY="482.0" prefHeight="17.0" prefWidth="262.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="600.0" prefWidth="113.0" style="-fx-background-color: #C0C0C0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlAjoutSalle">
+   <children>
+      <Pane prefHeight="610.0" prefWidth="918.0">
+         <children>
+            <Label layoutX="365.0" layoutY="33.0" prefHeight="54.0" prefWidth="335.0" text="Ajouter une salle">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Button fx:id="retour" layoutX="172.0" layoutY="526.0" mnemonicParsing="false" onAction="#exit" prefHeight="39.0" prefWidth="127.0" text="Retour">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="confi" layoutX="740.0" layoutY="526.0" mnemonicParsing="false" onAction="#Conf" prefHeight="39.0" prefWidth="127.0" text="Confirmer">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <TextField fx:id="num" layoutX="244.0" layoutY="173.0" prefHeight="25.0" prefWidth="157.0" promptText="Numéro" />
+            <TextField fx:id="nom" layoutX="615.0" layoutY="173.0" prefHeight="25.0" prefWidth="157.0" promptText="Nom" />
+            <ComboBox fx:id="type" layoutX="244.0" layoutY="254.0" prefHeight="25.0" prefWidth="157.0" promptText="Type" />
+            <ComboBox fx:id="etat" layoutX="615.0" layoutY="254.0" prefHeight="25.0" prefWidth="157.0" promptText="Etat" />
+            <Label fx:id="msg" layoutX="333.0" layoutY="125.0" prefHeight="17.0" prefWidth="344.0" />
+            <Label layoutX="244.0" layoutY="339.0" text="Capacité ( nombre d'élèves) :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nbr" layoutX="497.0" layoutY="337.0" prefHeight="25.0" prefWidth="277.0" promptText="Nombre d'élèves" />
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="600.0" prefWidth="113.0" style="-fx-background-color: #C0C0C0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

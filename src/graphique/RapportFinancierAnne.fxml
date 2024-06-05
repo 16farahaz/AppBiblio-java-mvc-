@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlRapportFinancierAnne">
+   <children>
+      <AnchorPane fx:id="toImprimer" layoutX="7.0" layoutY="14.0" prefHeight="432.0" prefWidth="691.0">
+         <children>
+            <TableView fx:id="tableAnne" layoutX="52.0" layoutY="82.0" prefHeight="338.0" prefWidth="582.0">
+              <columns>
+                <TableColumn fx:id="colMois" prefWidth="122.40002822875977" text="Mois" />
+                <TableColumn fx:id="colRev" prefWidth="142.40000915527344" text="Revenue" />
+                  <TableColumn fx:id="colDep" prefWidth="124.79998779296875" text="Depense" />
+                  <TableColumn fx:id="colpp" prefWidth="188.79998779296875" text="Profit/Perte" />
+              </columns>
+            </TableView>
+            <Label layoutX="181.0" layoutY="14.0" text="Rapport financier de l'annee" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="anne" layoutX="297.0" layoutY="46.0" text="annee">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnRet" layoutX="82.0" layoutY="491.0" mnemonicParsing="false" onAction="#Retour" prefHeight="42.0" prefWidth="102.0" text="Retour">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnImp" layoutX="301.0" layoutY="491.0" mnemonicParsing="false" onAction="#Imprimer" prefHeight="42.0" prefWidth="102.0" text="Imprimer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMois" layoutX="518.0" layoutY="491.0" mnemonicParsing="false" onAction="#VoirMois" prefHeight="42.0" prefWidth="102.0" text="Voir le rapport de le mois" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="conf" layoutX="236.0" layoutY="463.0" prefHeight="18.0" prefWidth="231.0" />
+   </children>
+</AnchorPane>

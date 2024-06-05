@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlModifier">
+   <children>
+      <AnchorPane prefHeight="474.0" prefWidth="103.0" style="-fx-background-color: D4A1EC;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="94.0" layoutX="7.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photo/manager.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Label layoutX="280.0" layoutY="24.0" prefHeight="46.0" prefWidth="309.0" text="Modification de formateur" textAlignment="CENTER" textFill="#c76fed">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="CIN" layoutX="332.0" layoutY="70.0" text="CIN" textFill="#c76fed">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="183.0" layoutY="116.0" promptText="Nom" />
+      <TextField fx:id="prenom" layoutX="477.0" layoutY="116.0" promptText="Prenom" />
+      <TextField fx:id="adress" layoutX="183.0" layoutY="178.0" promptText="Adress" />
+      <TextField fx:id="email" layoutX="477.0" layoutY="178.0" promptText="Email" />
+      <TextField fx:id="diplome" layoutX="183.0" layoutY="245.0" promptText="Diplome" />
+      <TextField fx:id="numero_telephone" layoutX="477.0" layoutY="245.0" promptText="Numero telephone" />
+      <TextField fx:id="expertise" layoutX="477.0" layoutY="301.0" promptText="Expertise" />
+      <Label layoutX="229.0" layoutY="359.0" text="Sexe" />
+      <RadioButton fx:id="sexeh" layoutX="327.0" layoutY="359.0" mnemonicParsing="false" text="Homme" />
+      <RadioButton fx:id="sexef" layoutX="460.0" layoutY="359.0" mnemonicParsing="false" text="Femme" />
+      <Button fx:id="btnann" layoutX="190.0" layoutY="402.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="78.0" text="Retour" />
+      <Button fx:id="btnconf" layoutX="551.0" layoutY="402.0" mnemonicParsing="false" onAction="#Conf" prefHeight="27.0" prefWidth="77.0" text="Confimer" />
+      <Label fx:id="conf" layoutX="317.0" layoutY="97.0" prefHeight="18.0" prefWidth="212.0" textAlignment="CENTER" />
+      <DatePicker fx:id="date_de_naissance" layoutX="182.0" layoutY="301.0" prefHeight="26.0" prefWidth="149.0" promptText="Date de naissance" />
+   </children>
+</AnchorPane>

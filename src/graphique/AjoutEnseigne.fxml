@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlAjoutEnseigne">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0">
+               <children>
+                  <AnchorPane layoutY="10.0" prefHeight="469.0" prefWidth="708.0">
+                     <children>
+                        <AnchorPane layoutX="12.0" layoutY="-5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="683.0">
+                           <children>
+                              <AnchorPane layoutX="-32.0" layoutY="-25.0" prefHeight="536.0" prefWidth="110.0" style="-fx-background-color: FFC881;" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="-25.0">
+                                 <children>
+                                    <ImageView fitHeight="185.0" fitWidth="110.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../interfaces/secretary.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="195.0" layoutY="-15.0" prefHeight="66.0" prefWidth="397.0" text="Ajout des enseignants a la session" textAlignment="CENTER" textFill="#e2a248" wrapText="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnann" layoutX="139.0" layoutY="437.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="110.0" text="Retour" />
+                              <Button fx:id="btnajou" layoutX="514.0" layoutY="437.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="36.0" prefWidth="110.0" text="Ajouter" />
+                              <Label fx:id="conf" layoutX="139.0" layoutY="111.0" prefHeight="18.0" prefWidth="502.0" />
+                              <TextField fx:id="nomch" layoutX="155.0" layoutY="85.0" prefHeight="26.0" prefWidth="243.0" promptText="Nom" />
+                              <Button fx:id="btnCher" layoutX="467.0" layoutY="85.0" mnemonicParsing="false" onAction="#Chercher" text="Chercher" />
+                              <TableView fx:id="tableEnseigne" layoutX="120.0" layoutY="130.0" prefHeight="222.0" prefWidth="523.0">
+                                 <columns>
+                                    <TableColumn fx:id="colcin" prefWidth="128.80006408691406" text="CIN" />
+                                    <TableColumn fx:id="colnom" prefWidth="133.5999755859375" text="Nom" />
+                                    <TableColumn fx:id="colprenom" prefWidth="123.20001220703125" text="Prenom" />
+                                    <TableColumn fx:id="coldip" prefWidth="142.40008544921875" text="Diplôme" />
+                                 </columns>
+                              </TableView>
+                              <Label fx:id="numS" layoutX="268.0" layoutY="18.0" prefHeight="66.0" prefWidth="374.0" textAlignment="CENTER" textFill="#e2a248" wrapText="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="salaire" layoutX="296.0" layoutY="377.0" promptText="Salaire" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

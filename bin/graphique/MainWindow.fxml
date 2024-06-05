@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="534.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlMainWindow">
+   <children>
+      <AnchorPane layoutX="-114.0" layoutY="-50.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="303.0" layoutY="23.0" text="Bonjour">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btngf" layoutX="139.0" layoutY="162.0" mnemonicParsing="false" onAction="#GestionFormateur" prefHeight="26.0" prefWidth="126.0" text="Gestion Formateurs" />
+      <Button fx:id="btngc" layoutX="466.0" layoutY="162.0" mnemonicParsing="false" onAction="#GestionClient" prefHeight="26.0" prefWidth="126.0" text="Gestion Clients" />
+      <Label fx:id="nom" layoutX="303.0" layoutY="77.0" text="Nom">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btngfr" layoutX="139.0" layoutY="232.0" mnemonicParsing="false" onAction="#GestionFormation" prefHeight="26.0" prefWidth="126.0" text="Gestion Formations" />
+      <Button fx:id="btndec" layoutX="611.0" layoutY="479.0" mnemonicParsing="false" onAction="#Logout" text="Déconnecter" />
+      <Button fx:id="btngi" layoutX="466.0" layoutY="232.0" mnemonicParsing="false" onAction="#GestionInscription" prefHeight="26.0" prefWidth="126.0" text="Gestion Inscription" />
+      <Button fx:id="btngs" layoutX="466.0" layoutY="307.0" mnemonicParsing="false" onAction="#GestionSession" prefHeight="26.0" prefWidth="126.0" text="Gestion Session" />
+      <Button fx:id="btngu" layoutX="51.0" layoutY="479.0" mnemonicParsing="false" onAction="#GestionUsers" text="Gestion Users" />
+      <Button fx:id="btngsl" layoutX="139.0" layoutY="302.0" mnemonicParsing="false" onAction="#GestionSalle" prefHeight="26.0" prefWidth="126.0" text="Gestion Salle" />
+      <Button fx:id="btngr" layoutX="139.0" layoutY="372.0" mnemonicParsing="false" onAction="#GestionRevenue" prefHeight="26.0" prefWidth="126.0" text="Gestion Revenue" />
+      <Button fx:id="btngd" layoutX="466.0" layoutY="372.0" mnemonicParsing="false" onAction="#GestionDepense" prefHeight="26.0" prefWidth="126.0" text="Gestion Depense" />
+      <Button fx:id="btngst" layoutX="296.0" layoutY="418.0" mnemonicParsing="false" onAction="#GenerationStat" prefHeight="26.0" prefWidth="139.0" text="Generation Statistique" />
+   </children>
+</AnchorPane>

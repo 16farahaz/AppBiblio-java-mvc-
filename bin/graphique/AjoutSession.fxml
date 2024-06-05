@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlAjoutSession">
+   <children>
+      <AnchorPane layoutY="10.0" prefHeight="469.0" prefWidth="708.0">
+         <children>
+            <AnchorPane layoutX="12.0" layoutY="-5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="683.0">
+               <children>
+                  <AnchorPane layoutX="-12.0" layoutY="-10.0" prefHeight="521.0" prefWidth="110.0" style="-fx-background-color: FFC881;" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="-10.0">
+                     <children>
+                        <ImageView fitHeight="185.0" fitWidth="110.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../interfaces/secretary.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <Label layoutX="272.0" layoutY="14.0" prefHeight="46.0" prefWidth="238.0" text="Ajouter une session" textAlignment="CENTER" textFill="#e2a248">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="numSession" layoutX="155.0" layoutY="78.0" prefHeight="26.0" prefWidth="185.0" promptText="N° du session " />
+                  <Button fx:id="btnann" layoutX="155.0" layoutY="487.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="110.0" text="Retour" />
+                  <Button fx:id="btnconf" layoutX="498.0" layoutY="487.0" mnemonicParsing="false" onAction="#Conf" prefHeight="36.0" prefWidth="110.0" text="Confimer" />
+                  <Label fx:id="conf" layoutX="176.0" layoutY="51.0" prefHeight="18.0" prefWidth="497.0" />
+                  <TextField fx:id="nomSession" layoutX="438.0" layoutY="78.0" prefHeight="26.0" prefWidth="186.0" promptText="Nom du session" />
+                  <TextField fx:id="idFormation" layoutX="155.0" layoutY="142.0" prefHeight="26.0" prefWidth="186.0" promptText="ID de formation" />
+                  <Button fx:id="btnCher" layoutX="434.0" layoutY="142.0" mnemonicParsing="false" onAction="#Chercher" text="Chercher" />
+                  <TableView fx:id="tableFormation" layoutX="145.0" layoutY="188.0" prefHeight="66.0" prefWidth="523.0">
+                    <columns>
+                      <TableColumn fx:id="colNom" prefWidth="137.59991455078125" text="Nom" />
+                      <TableColumn fx:id="colDomaine" prefWidth="134.39996337890625" text="Domaine" />
+                        <TableColumn fx:id="colType" prefWidth="112.80001831054688" text="Type" />
+                        <TableColumn fx:id="colNiveau" prefWidth="142.40008544921875" text="Niveau" />
+                    </columns>
+                  </TableView>
+                  <DatePicker fx:id="dateDeb" layoutX="154.0" layoutY="280.0" prefHeight="26.0" prefWidth="186.0" promptText="Date de debut" />
+                  <DatePicker fx:id="dateFin" layoutX="447.0" layoutY="280.0" prefHeight="26.0" prefWidth="186.0" promptText="Date de fin" />
+                  <ComboBox fx:id="heurDeb" layoutX="155.0" layoutY="346.0" prefHeight="26.0" prefWidth="186.0" promptText="Heure de debut" />
+                  <TextField fx:id="numSalle" layoutX="447.0" layoutY="346.0" onKeyTyped="#TestSalle" prefHeight="26.0" prefWidth="186.0" promptText="N° du salle" />
+                  <CheckBox fx:id="lun" layoutX="293.0" layoutY="407.0" mnemonicParsing="false" text="Lundi" />
+                  <CheckBox fx:id="mar" layoutX="364.0" layoutY="407.0" mnemonicParsing="false" text="Mardi" />
+                  <CheckBox fx:id="mer" layoutX="447.0" layoutY="407.0" mnemonicParsing="false" text="Mercredi" />
+                  <CheckBox fx:id="jeu" layoutX="294.0" layoutY="441.0" mnemonicParsing="false" text="Jeudi" />
+                  <CheckBox fx:id="ven" layoutX="364.0" layoutY="440.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="76.0" text="Vendredi" />
+                  <CheckBox fx:id="sam" layoutX="447.0" layoutY="440.0" mnemonicParsing="false" text="Samedi" />
+                  <Label layoutX="225.0" layoutY="406.0" prefHeight="18.0" prefWidth="45.0" text="Jours:" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

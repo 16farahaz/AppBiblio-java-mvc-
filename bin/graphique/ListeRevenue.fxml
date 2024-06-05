@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlListeRevenue">
+   <children>
+      <AnchorPane fx:id="table" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="856.0">
+         <children>
+            <AnchorPane layoutX="-11.0" layoutY="-12.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="136.0" style="-fx-background-color: #1e9384;">
+               <children>
+                  <ImageView fitHeight="171.0" fitWidth="175.0" layoutX="13.0" layoutY="402.0">
+                     <image>
+                        <Image url="@../../../../../bureau/Nouveau%20dossier%20(5)/éeme%20info/projet/interface/revenue.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="285.0" layoutY="27.0" prefHeight="50.0" prefWidth="357.0" text="Liste des revenues " textFill="#1e9384">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="Retour" layoutX="203.0" layoutY="504.0" mnemonicParsing="false" onAction="#exit" prefHeight="37.0" prefWidth="146.0" text="Retour">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btncher" layoutX="721.0" layoutY="122.0" mnemonicParsing="false" onAction="#chercher" prefHeight="30.0" prefWidth="103.0" text="Chercher">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tableRev" layoutX="165.0" layoutY="174.0" prefHeight="292.0" prefWidth="659.0">
+              <columns>
+                <TableColumn fx:id="colRef" prefWidth="156.00003051757812" text="Reference" />
+                <TableColumn fx:id="colCIN" prefWidth="182.39999389648438" text="CIN client" />
+                  <TableColumn fx:id="colDate" prefWidth="152.800048828125" text="Date de paiement" />
+                  <TableColumn fx:id="colMon" prefWidth="169.59991455078125" text="Montant" />
+              </columns>
+            </TableView>
+            <DatePicker fx:id="deb" layoutX="198.0" layoutY="122.0" prefHeight="30.0" prefWidth="190.0" promptText="Aprés" />
+            <DatePicker fx:id="fin" layoutX="464.0" layoutY="122.0" prefHeight="30.0" prefWidth="190.0" promptText="Avant" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

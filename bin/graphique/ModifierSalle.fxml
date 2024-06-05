@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlModifierSalle">
+   <children>
+      <Pane layoutX="14.0" prefHeight="610.0" prefWidth="918.0">
+         <children>
+            <Label layoutX="365.0" layoutY="33.0" prefHeight="54.0" prefWidth="335.0" text="Modifier la salle">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Button fx:id="retour" layoutX="172.0" layoutY="514.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="114.0" text="Retour">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="confi" layoutX="748.0" layoutY="514.0" mnemonicParsing="false" onAction="#Conf" prefHeight="25.0" prefWidth="114.0" text="Confirmer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nom" layoutX="401.0" layoutY="220.0" prefHeight="25.0" prefWidth="211.0" promptText="Nom" />
+            <ComboBox fx:id="type" layoutX="244.0" layoutY="305.0" prefHeight="25.0" prefWidth="157.0" promptText="Type" />
+            <ComboBox fx:id="etat" layoutX="615.0" layoutY="305.0" prefHeight="25.0" prefWidth="157.0" promptText="Etat" />
+            <Label layoutX="344.0" layoutY="52.0" />
+            <Label fx:id="conf" layoutX="424.0" layoutY="160.0" prefHeight="17.0" prefWidth="163.0" />
+            <Label fx:id="num" layoutX="413.0" layoutY="92.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="600.0" prefWidth="113.0" style="-fx-background-color: #C0C0C0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

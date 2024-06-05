@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlModifierClient">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="458.0" prefWidth="107.0" style="-fx-background-color: #3CB371 #3CB371;">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="99.0" layoutX="4.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photo/secretary.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Label layoutX="286.0" layoutY="14.0" prefHeight="46.0" prefWidth="217.0" text="Modification de client" textAlignment="CENTER" textFill="MEDIUMSEAGREEN">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="cincli" layoutX="329.0" layoutY="60.0" text="CIN" textFill="MEDIUMSEAGREEN">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomcli" layoutX="155.0" layoutY="129.0" promptText="Nom" />
+      <TextField fx:id="prenomcli" layoutX="429.0" layoutY="129.0" promptText="Prenom" />
+      <TextField fx:id="adrcli" layoutX="155.0" layoutY="178.0" promptText="Adress" />
+      <TextField fx:id="emailcli" layoutX="429.0" layoutY="178.0" promptText="Email" />
+      <TextField fx:id="telcli" layoutX="155.0" layoutY="229.0" promptText="Numero telephone" />
+      <Label layoutX="229.0" layoutY="350.0" text="Sexe" />
+      <RadioButton fx:id="sexeh" layoutX="297.0" layoutY="350.0" mnemonicParsing="false" text="Homme" />
+      <RadioButton fx:id="sexef" layoutX="430.0" layoutY="350.0" mnemonicParsing="false" text="Femme" />
+      <Button fx:id="annulcli" layoutX="196.0" layoutY="397.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="83.0" text="Retour" />
+      <Button fx:id="btnconf" layoutX="460.0" layoutY="397.0" mnemonicParsing="false" onAction="#Conf" prefHeight="31.0" prefWidth="83.0" text="Confimer" />
+      <Label fx:id="conf" layoutX="300.0" layoutY="98.0" prefHeight="18.0" prefWidth="218.0" textAlignment="CENTER" />
+      <DatePicker fx:id="datecli" layoutX="279.0" layoutY="286.0" promptText="Date de naissance" />
+      <ComboBox fx:id="niveau" layoutX="430.0" layoutY="228.0" prefHeight="26.0" prefWidth="149.0" promptText="Niveau" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlSupprimerInscription">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="395.0" prefWidth="575.0">
+               <children>
+                  <AnchorPane layoutX="-11.0" layoutY="-10.0" prefHeight="405.0" prefWidth="586.0">
+                     <children>
+                        <AnchorPane layoutX="-10.0" layoutY="-9.0" prefHeight="416.0" prefWidth="107.0" style="-fx-background-color: #6495ED;" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="-9.0">
+                           <children>
+                              <ImageView fitHeight="73.0" fitWidth="90.0" layoutX="3.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../interfaces/secretary.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="155.0" layoutY="33.0" text="Voulez-vous supprimer l'inscription" textAlignment="CENTER" textFill="CORNFLOWERBLUE" wrapText="true">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="155.0" layoutY="71.0" text="de le client" textFill="CORNFLOWERBLUE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnann" layoutX="200.0" layoutY="295.0" mnemonicParsing="false" onAction="#annuler" prefHeight="46.0" prefWidth="89.0" text="Retour">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnsupp" layoutX="386.0" layoutY="295.0" mnemonicParsing="false" onAction="#supp" prefHeight="46.0" prefWidth="119.0" text="Supprimer" textFill="#f20404">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="155.0" layoutY="203.0" text="dans la session N°" textFill="CORNFLOWERBLUE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="numS" layoutX="386.0" layoutY="203.0" text="Ses" textFill="CORNFLOWERBLUE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="CIN" layoutX="208.0" layoutY="150.0" text="CIN" textFill="CORNFLOWERBLUE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="np" layoutX="208.0" layoutY="112.0" text="Nom" textFill="CORNFLOWERBLUE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

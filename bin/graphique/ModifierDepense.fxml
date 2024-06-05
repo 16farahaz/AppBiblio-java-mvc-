@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.ControlModifierDepense">
+   <children>
+      <AnchorPane layoutY="-27.0" prefHeight="627.0" prefWidth="900.0" />
+      <AnchorPane fx:id="dateDep" layoutX="-7.0" prefHeight="610.0" prefWidth="900.0">
+         <children>
+            <Label layoutX="332.0" layoutY="38.0" text="Modifier une dépense " textFill="DARKRED">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Label>
+            <TextField fx:id="montantDep" layoutX="284.0" layoutY="216.0" prefHeight="26.0" prefWidth="448.0" promptText="Montant" />
+            <AnchorPane layoutX="6.0" layoutY="-10.0" prefHeight="610.0" prefWidth="158.0" style="-fx-background-color: #8B0000;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="btnconf" layoutX="717.0" layoutY="515.0" mnemonicParsing="false" onAction="#Conf" prefHeight="36.0" prefWidth="105.0" text="Confimer" />
+            <Button fx:id="btnann" layoutX="234.0" layoutY="510.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="96.0" text="Annuler" />
+            <Label fx:id="nomDep" layoutX="402.0" layoutY="99.0" text="NomDep" textFill="DARKRED">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Label>
+            <TextField fx:id="typeDep" layoutX="284.0" layoutY="263.0" prefHeight="26.0" prefWidth="448.0" promptText="Type" />
+            <Text layoutX="282.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" wrappingWidth="117.3406982421875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="descDep" layoutX="277.0" layoutY="409.0" prefHeight="82.0" prefWidth="498.0" />
+            <DatePicker fx:id="dateDep" layoutX="282.0" layoutY="319.0" />
+            <Label fx:id="conf" layoutX="369.0" layoutY="510.0" prefHeight="36.0" prefWidth="300.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
